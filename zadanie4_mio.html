@@ -1,60 +1,72 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Zadania</title>
+    <script>function okno_zamknij()  
+        { 
+              window.close() 
+        } </script>
+</head>
+<body>
+    <h1>Rozwiązania zadań dotyczących JavaScript</h1>
 
-    </head>
-    <body>
-<b>1)kiedy powstał JavaScript (podaj datę).</b><br>
-został stworzony w 1995 roku<br>
-<b>2)dlaczego jest to język skryptowy</b><br>
-JavaScript jest językiem skryptowym – to znaczy interpretowanym. Nie musi 
-zostać skompilowany do kodu maszynowego, aby można było zobaczyć efekty jego działania. 
-Wystarczy nam do tego przeglądarka internetowa, która ten język obsługuje.<br>
-<b>3)gdzie jest wykonywany JS (klient lub serwer)</b><br>
-…………………………..tutaj odpowiedź…………………………………………..<br>
-<b>4)dlaczego jest JS to bezpieczne narzędzie</b><br>
-JavaScript ma znacznie ograniczone uprawnienia dostępu do zasobów 
-komputera, przy użyciu którego przeglądana jest dana strona, a wszelkie odwołania do funkcji i 
-obiektów wykonywane są w trakcie wykonywania programu.<br>
-<b>5)czy jest to język obiektowy , jeśli tak to dlaczego.</b><br>
-Javascript jest językiem programowania obiektowego ponieważ wykorzystuje definicje obiektów, 
-metod, zdarzeń, które mogą być zastosowane do opisu właściwości obiektów. Autorzy JS zdefiniowali 
-bardzo dużo obiektów, metod, zdarzeń.<br>
-<b>6)wymień zalety JS:</b><br>
-Zaleta1 - Największą zaletą JavaScriptu jest niewątpliwie jego prostota. Język ten uważa się więc za 
-relatywnie łatwy do opanowania i rzeczywiście – nic nie stoi na przeszkodzie, aby zacząć używać go 
-już po kilku minutach od rozpoczęcia nauki.<br>
-Zaleta2 - Ponieważ jest to obecnie najbardziej rozpowszechniony język skryptowy, w Internecie można 
-znaleźć miliony praktycznych przykładów – witryn wykorzystujących różnorodne funkcje JavaScriptu.<br>
-Zaleta3 O olbrzymiej popularności języka zadecydowały z pewnością jego uniwersalność oraz fakt, iż 
-pozwala on na odciążenie serwerów i ograniczenie ilości zbędnych danych przesyłanych pomiędzy 
-nimi a przeglądarką klienta. <br>
-<b>7)Framework to:</b><br>
-rodzaj programu do tworzenia innych programów w JS<br>
-<b>8)Do aplikacji mobilnych można użyć Framework</b><br>
-…………………………..tutaj odpowiedź…………………………………………..<br>
-<b>9)Aplikacje responsywne to:</b><br>
-…………………………..tutaj odpowiedź…………………………………………..<br>
-<b>10)Przepisz linie kody pod nimi wytłumaczenie jak działa ten fragment kodu </b><br>
-<span style="border: 1px solid black;">< input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"></span><br>
-……………………………wytłumaczenie jak działa linia kodu……………….<br>
-Uwaga:<br>
-gdy chcesz wyświetlić instrukcję, która nie powinna się wykonywać a tylko wyświetlać masz do <br>
-dyspozycji wyświetlanie znaków, które nie będą interpretowane jako instrukcja czyli > lub <<br>
-znak < możesz wyświetlić jako &lsaquo;<br>
-znak > możesz wyświetlić jako &rsaquo;<br>
-<b>11)Przepisz linie kody pod nimi wytłumaczenie jak działa ta ten fragment kodu</b><br> 
-window.open("obraz.html","okienko","toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");<br>
-……………………………wytłumaczenie jak działa linia kodu……………….<br>
-kliknij tutaj aby uzyskać opis poniższych opcji<br>
-lub https://kursjs.pl/kurs/rozne/okna<br>
-toolbar=no wytłumaczenie np. ukrywa przyciski katalogów<br>
-directories=no, wytłumaczenie<br>
-menubar=no, wytłumaczenie<br>
-height=280, wytłumaczenie<br>
-width=160, wytłumaczenie<br>
-top=200, wytłumaczenie<br>
-left=200 wytłumaczenie<br>
-<b>12)Opisz następującą instrukcję window.close()</b><br>
-……………………………wytłumaczenie………………………………………………………………………………<br>
-    </body>
+    <b>1. Kiedy powstał JavaScript?</b>
+    <p>JavaScript powstał w 1995 roku.</p>
+
+    <b>2. Dlaczego jest to język skryptowy?</b>
+    <p>JavaScript jest językiem skryptowym, ponieważ jest interpretowany, a nie kompilowany. Oznacza to, że jego kod jest wykonywany bezpośrednio przez przeglądarkę internetową, bez potrzeby kompilacji do kodu maszynowego.</p>
+
+    <b>3. Gdzie jest wykonywany JS (klient lub serwer)?</b>
+    <p>JavaScript może być wykonywany zarówno po stronie klienta (w przeglądarce), jak i po stronie serwera (przy użyciu środowisk takich jak Node.js).</p>
+
+    <b>4. Dlaczego JS to bezpieczne narzędzie?</b>
+    <p>JavaScript jest bezpieczny, ponieważ ma ograniczone uprawnienia dostępu do zasobów komputera, na którym jest uruchamiany. Wszystkie działania w ramach tego języka są kontrolowane przez przeglądarkę.</p>
+
+    <b>5. Czy jest to język obiektowy, jeśli tak to dlaczego?</b>
+    <p>Tak, JavaScript jest językiem obiektowym, ponieważ pozwala na definiowanie obiektów, które mają swoje właściwości i metody. Wspiera model DOM (Document Object Model), który umożliwia interakcję z elementami na stronie jako obiektami.</p>
+
+    <b>6. Wymień zalety JavaScript:</b>
+    <ul>
+        <li>Zaleta 1: Prosty i łatwy do nauczenia, co sprawia, że szybko można zacząć tworzyć aplikacje.</li>
+        <li>Zaleta 2: Powszechnie stosowany w Internecie, dostępne są miliony przykładów i zasobów.</li>
+        <li>Zaleta 3: Odpowiedni do tworzenia dynamicznych i interaktywnych aplikacji, które reagują w czasie rzeczywistym.</li>
+    </ul>
+
+    <b>7. Framework to:</b>
+    <p>Framework to zbiór gotowych narzędzi, bibliotek i struktur programistycznych, które ułatwiają tworzenie aplikacji poprzez dostarczenie gotowych rozwiązań dla typowych problemów.</p>
+
+    <b>8. Do aplikacji mobilnych można użyć Framework:</b>
+    <p>Tak, do tworzenia aplikacji mobilnych można używać frameworków takich jak React Native, który umożliwia tworzenie aplikacji na różne systemy operacyjne.</p>
+
+    <b>9. Aplikacje responsywne to:</b>
+    <p>Aplikacje, które dostosowują swój wygląd i układ do różnych rozmiarów ekranów, dzięki czemu dobrze wyglądają i działają zarówno na komputerach, jak i na urządzeniach mobilnych.</p>
+
+    <b>10. Fragment kodu:</b>
+    <p>
+        <code>&lsaquo;input type="button" name="przycisk" value="Nowa Strona" onclick="WinOpen(' ')"&rsaquo;</code>
+    </p>
+    <p>Ten fragment kodu HTML tworzy przycisk z napisem "Nowa Strona". Po jego kliknięciu wywoływana jest funkcja JavaScript o nazwie WinOpen, która prawdopodobnie otwiera nowe okno przeglądarki (w zależności od definicji funkcji).</p>
+
+    <b>11. Fragment kodu:</b>
+    <p>
+        <code>window.open("obraz.html", "okienko", "toolbar=no,directories=no,menubar=no,height=280,width=160,top=200,left=200");</code>
+    </p>
+    <p>Ten kod otwiera nowe okno przeglądarki z plikiem HTML o nazwie "obraz.html". Nowe okno nosi nazwę "okienko", a jego wygląd jest skonfigurowany następująco:</p>
+    <ul>
+        <li>toolbar=no: Ukrywa pasek narzędzi.</li>
+        <li>directories=no: Ukrywa przyciski katalogów.</li>
+        <li>menubar=no: Ukrywa pasek menu.</li>
+        <li>height=280: Ustawia wysokość okna na 280 pikseli.</li>
+        <li>width=160: Ustawia szerokość okna na 160 pikseli.</li>
+        <li>top=200: Ustawia pozycję okna 200 pikseli od górnej krawędzi ekranu.</li>
+        <li>left=200: Ustawia pozycję okna 200 pikseli od lewej krawędzi ekranu.</li>
+    </ul>
+
+    <b>12. Instrukcja <code>window.close()</code></b>
+    <p>Instrukcja <code>window.close()</code> zamyka bieżące okno przeglądarki, w którym została wywołana. Aby działała, musi być wywołana w oknie otwartym za pomocą JavaScript (np. <code>window.open()</code>).</p>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+
+</body>
 </html>
