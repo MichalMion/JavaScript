@@ -1,0 +1,32 @@
+
+    <!DOCTYPE html>
+    <html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var d1_mio=prompt("Podaj pierwszy dzień=","");
+            var d11_mio=parseInt(d1_mio);
+
+            var g1_mio=prompt("Podaj godzine pierwszego dnia=","");
+            var g11_mio=parseInt(g1_mio);
+            
+            var d2_mio=prompt("Podaj drugi dzień =","");
+            var d22_mio=parseInt(d2_mio);
+
+            var g2_mio=prompt("Podaj godzine drugiego dnia=","");
+            var g22_mio=parseInt(g2_mio);
+    
+            var sekundy1=((((d11_mio-d22_mio)*24)*60)*60);
+
+            var sekundy2=(((g22_mio-g11_mio)*60)*60);
+
+            var suma=sekundy1-sekundy2;
+
+            document.write("d1="+d11_mio+"<br>g1="+g11_mio+"<br>d2="+d22_mio+"<br>g2="+g22_mio+"<br>Ilość sekund ="+suma+"sekund")
+        </script>
+    </body>
+    </html>
