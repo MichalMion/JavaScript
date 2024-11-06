@@ -1,0 +1,52 @@
+<textarea style="width: 705px; height: 437px;">
+<html>  
+<head>  
+<title> 
+Przykład obliczenia pola i obwodu prostokąta 
+</title> 
+<script language="JavaScript"> 
+function Pole_mio(a_mio, b_mio) 
+{ 
+    a_liczba=parseFloat(a_mio) 
+    b_liczba=parseFloat(b_mio) 
+    Pole_wynik=a_liczba*b_liczba 
+    document.getElementsByName('pole')[0].value=Pole_wynik.toFixed(2); 
+    alert("Pole="+Pole_wynik.toFixed(2)+" cm^2"); 
+    pokaz1.innerHTML="Pole="+Pole_wynik.toFixed(2)+" cm^2"+"<br>"; 
+} 
+
+function Obwod_mio(a_mio, b_mio) 
+{ 
+    a_liczba=parseFloat(a_mio) 
+    b_liczba=parseFloat(b_mio) 
+    Obwod_wynik=2*(a_liczba+b_liczba) 
+    document.getElementsByName('obw')[0].value=Obwod_wynik.toFixed(2); 
+    alert("Obwód="+Obwod_wynik.toFixed(2)+" cm"); 
+    pokaz2.innerHTML="Obwód="+Obwod_wynik.toFixed(2)+" cm"; 
+} 
+</script> 
+</head>  
+<body>  
+ Obliczanie pola i obwodu prostokąta 
+<br> <br> 
+<form name="formularz" action="..." onsubmit="Pole_mio(this.a_dana_mio.value,this.b_dana_mio.value); 
+Obwod_mio(this.a_dana_mio.value,this.b_dana_mio.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="a_dana_mio"> 
+     Podaj b= 
+        <input  size="6"  name="b_dana_mio"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Pole= 
+           <input  size="6"  name="pole"> 
+       Obwód= 
+          <input  size="6"  name="obw"> 
+</form> 
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body>  
+</html>
+</textarea>

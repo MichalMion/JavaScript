@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        function Pow_mionskowski(a, b, h) {
+            return ((a + b) * h) / 2;
+        }
+
+        function Obw_mionskowski(a, b, h) {
+            let r = Math.sqrt(Math.pow((Math.abs(b - a)) / 2, 2) + Math.pow(h, 2));
+            return a + b + 2 * r;
+        }
+
+        function oblicz() {
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            let h = parseFloat(document.getElementById("h").value);
+
+            let pole = Pow_mionskowski(a, b, h);
+            let obwod = Obw_mionskowski(a, b, h);
+
+            document.getElementById("wynik_pole").value = pole.toFixed(2);
+            document.getElementById("wynik_obwod").value = obwod.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+
+    <form onsubmit="event.preventDefault(); oblicz();">
+        Górna podstawa (a): 
+        <input type="number" id="a" name="a"><br><br>
+
+        Dolna podstawa (b): 
+        <input type="number" id="b" name="b"><br><br>
+
+        Wysokość (h): 
+        <input type="number" id="h" name="h"><br><br>
+
+        <button type="submit">Oblicz</button><br><br>
+
+        Pole trapezu: 
+        <input type="text" id="wynik_pole" name="wynik_pole" ><br><br>
+
+        Obwód trapezu: 
+        <input type="text" id="wynik_obwod" name="wynik_obwod" ><br><br>
+    </form>
+</body>
+</html>

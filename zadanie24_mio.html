@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wyniki_mio {
+            background-color: lightgray;
+            color: blue;
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            border: 1px solid black;
+            width: 200px;
+            line-height: 1.6;
+        }
+    </style>
+    <script>
+        function oblicz() {
+            var x1_mio=parseFloat(prompt("x1= ",""));
+  
+  var x2_mio=parseFloat(prompt("x2= ",""));
+  var y1=3*x1_mio*(5/7);
+  var rad=(x1_mio*Math.PI)/180;
+  var y2=2*Math.cos(rad)+3*Math.sin(rad);
+  var y3 = Math.cbrt(Math.pow(x1_mio,5)+2*Math.pow(x2_mio,4))*Math.abs(x1_mio-x2_mio);
+
+            document.getElementById("wyniki_mio").innerHTML = 
+                "x1 = " + x1_mio + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x2 = " + x2_mio + "<br>" +
+                "x1 = " + x1_mio + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x1 = " + rad.toFixed(2) + "<br>" +
+                "y1 = " + y1.toFixed(2) + "<br>" +
+                "y2 = " + y2.toFixed(2) + "<br>" +
+                "y3 = " + y3.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="oblicz()">Oblicz wartości</button>
+    <div id="wyniki_mio"></div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wszystko o TRÓJKĄCIE</title>
+</head>
+<body>
+    <h1>Wszystko o TRÓJKĄCIE</h1><br><br>
+    Podaj współrzędne punktu A (xa_mio, ya_mio): <br>
+    xa_mio: <input type="text" id="xa_mio" value="0"> cm<br>
+    ya_mio: <input type="text" id="ya_mio" value="0"> cm<br><br>
+    Podaj współrzędne punktu B (xb_mio, yb_mio): <br>
+    xb_mio: <input type="text" id="xb_mio" value="0"> cm<br>
+    yb_mio: <input type="text" id="yb_mio" value="0"> cm<br><br>
+    Podaj współrzędne punktu C (xc_mio, yc_mio): <br>
+    xc_mio: <input type="text" id="xc_mio" value="0"> cm<br>
+    yc_mio: <input type="text" id="yc_mio" value="0"> cm<br><br>
+    <input type="button" name="obliczAB" value="Oblicz AB" onclick="AB_mio()"><br><br>
+    <input type="button" name="obliczBC" value="Oblicz BC" onclick="BC_mio()"><br><br>
+    <input type="button" name="obliczAC" value="Oblicz AC" onclick="AC_mio()"><br><br>
+    <div style="color:red;font-size:20px;" id="wynik"></div>
+
+    <script type="text/javascript">
+        function AB_mio() {
+            var xa_mio = parseFloat(document.getElementById("xa_mio").value);
+            var ya_mio = parseFloat(document.getElementById("ya_mio").value);
+            var xb_mio = parseFloat(document.getElementById("xb_mio").value);
+            var yb_mio = parseFloat(document.getElementById("yb_mio").value);
+            var odlegloscAB = Math.sqrt(Math.pow(xa_mio - xb_mio, 2) + Math.pow(ya_mio - yb_mio, 2));
+            document.getElementById("wynik").innerText = "Długość AB: " + odlegloscAB.toFixed(2) + " cm";
+        }
+
+        function BC_mio() {
+            var xb_mio = parseFloat(document.getElementById("xb_mio").value);
+            var yb_mio = parseFloat(document.getElementById("yb_mio").value);
+            var xc_mio = parseFloat(document.getElementById("xc_mio").value);
+            var yc_mio = parseFloat(document.getElementById("yc_mio").value);
+            var odlegloscBC = Math.sqrt(Math.pow(xb_mio - xc_mio, 2) + Math.pow(yb_mio - yc_mio, 2));
+            document.getElementById("wynik").innerText = "Długość BC: " + odlegloscBC.toFixed(2) + " cm";
+        }
+
+        function AC_mio() {
+            var xa_mio = parseFloat(document.getElementById("xa_mio").value);
+            var ya_mio = parseFloat(document.getElementById("ya_mio").value);
+            var xc_mio = parseFloat(document.getElementById("xc_mio").value);
+            var yc_mio = parseFloat(document.getElementById("yc_mio").value);
+            var odlegloscAC = Math.sqrt(Math.pow(xa_mio - xc_mio, 2) + Math.pow(ya_mio - yc_mio, 2));
+            document.getElementById("wynik").innerText = "Długość AC: " + odlegloscAC.toFixed(2) + " cm";
+        }
+    </script>
+</body>
+</html>
