@@ -1,0 +1,37 @@
+<textarea style="width: 666px; height: 453px;">
+<html> 
+<head> 
+  <script type="text/javascript"> 
+    function owoc(jaki_owoc_m, smak_m, kolor_m) { 
+      this.jaki_owoc = jaki_owoc_m; 
+      this.smak = smak_m; 
+      this.kolor = kolor_m;   
+    }
+
+    owoc.prototype.wypisz = function() { 
+      alert(this.jaki_owoc + ' ' + this.smak + ' ' + this.kolor); 
+    };
+
+    owoc.prototype.kategoria = "owoc"; 
+
+
+
+    var owoc1 = new owoc("Kiwi", "lekko kwaśny", "zielony"); 
+    var owoc2 = new owoc('Banan', 'Słodki', 'żółty');
+    var owoc3 = new owoc("Jabłko", "słodki", "czerwony");   
+    owoc1.wypisz(); 
+    owoc2.wypisz(); 
+    owoc3.wypisz(); 
+
+    document.write("dostęp do właściwości" + "<br>");
+    document.write("Owoc pierwszy:" + "   " + owoc1.jaki_owoc + ",   " + owoc1.smak + ",   " + owoc1.kolor + "<br>");
+    document.write("Owoc drugi:" + "   " + owoc2.jaki_owoc + ",   " + owoc2.smak + ",   " + owoc2.kolor + "<br>");
+    document.write("Owoc trzeci" + "   " + owoc3.jaki_owoc + " ,  " + owoc3.smak + ",   " + owoc3.kolor + "<br>");
+
+  </script> 
+</head> 
+<body> 
+  <br> Programowanie obiektowe   
+</body> 
+</html>
+</textarea>
